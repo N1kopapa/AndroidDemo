@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity">
+
+    <!--请把下列语句放入上面的定义中，并且更改activity_main.xml的引用即可
+    tools:showIn="@layout/activity_main"
+    -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#d6d7d7"
+        android:gravity="top"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="@android:style/Widget.Holo.TextView.SpinnerItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/author"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_red_light"
+            android:textColorLink="@color/colorAccent" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="?android:attr/listDivider" />
+
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:rowCount="2">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="pro1"
+                android:src="@drawable/android4035"
+                android:tooltipText="@string/pro1"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="pro2"
+                android:src="@drawable/android4036"
+                android:tooltipText="@string/pro2"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="pro3"
+                android:src="@drawable/android4032"
+                android:tooltipText="@string/pro3"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="pro4"
+                android:src="@drawable/android4031"
+                android:tooltipText="@string/pro4"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton1"
+            android:onClick="imageClick"
+            android:tooltipText="@string/imagebuttontip"
+            app:srcCompat="@drawable/android4037" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="pro5"
+            android:src="@drawable/android4041"
+            android:tooltipText="@string/pro5" />
+        </GridLayout>
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+
+        <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/dscf0865"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

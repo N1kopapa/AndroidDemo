@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.edu.tsu.computer.demo02">
+
+
+    <!--权限列表：根据需要增加相应的权限-->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_mys"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_mys"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:largeHeap="true">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--功能模块A-->
+        <activity
+            android:name=".MainActivity1"
+            android:label="@string/pro1"
+            android:logo="@mipmap/ic_mys"
+            android:icon="@mipmap/ic_mys">
+        </activity>
+
+        <!--功能模块B-->
+        <activity
+            android:name=".MainActivity2"
+            android:label="@string/pro2"
+            android:logo="@drawable/android0491"
+            android:icon="@drawable/android0493"
+            android:theme="@style/Base.Theme.AppCompat.Light">
+        </activity>
+
+        <!--功能模块C-->
+        <activity
+            android:name=".MainActivity3"
+            android:label="@string/pro3"
+            android:logo="@drawable/android2814"
+            android:icon="@drawable/android2829"
+            android:theme="@style/Theme.AppCompat.DayNight">
+        </activity>
+
+        <!--功能模块D-->
+        <activity
+            android:name=".MainActivity4"
+            android:label="@string/pro4"
+            android:logo="@drawable/android4006"
+            android:icon="@drawable/android4007"
+            android:theme="@style/Theme.AppCompat.DayNight">
+        </activity>
+
+    </application>
+
+    <!--权限列表：根据需要增加相应的权限-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+</manifest>

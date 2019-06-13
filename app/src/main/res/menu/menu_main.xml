@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="cn.edu.tsu.computer.demo01.MainActivity">
+    <item
+        android:id="@+id/menu1"
+        android:checkable="false"
+        android:icon="@drawable/android3549"
+        android:orderInCategory="100"
+        android:title="@string/pro1"
+        android:titleCondensed="@string/pro1"
+        android:tooltipText="@string/pro1"
+        app:showAsAction="never|withText" />
+    <item
+        android:id="@+id/menu4"
+        android:icon="@drawable/android0093"
+        android:orderInCategory="101"
+        android:title="@string/pro4" />
+    <item
+        android:id="@+id/menu2"
+        android:icon="@drawable/android0058"
+        android:orderInCategory="100"
+        android:title="@string/pro2" />
+    <item
+        android:id="@+id/menu3"
+        android:icon="@android:drawable/btn_dialog"
+        android:orderInCategory="100"
+        android:title="@string/pro3"
+        app:showAsAction="never" />
+</menu>

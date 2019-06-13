@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Android程序设计FinalDemo</string>
+       <string name="author">2016072053周旭</string>
+    <string name="imagebuttontip">这是一个图标按钮示例</string>
+    <string name="appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="pro1">风景播放器</string>
+    <string name="pro2">电子钢琴</string>
+    <string name="pro3">计算器</string>
+    <string name="pro4">全景Vr</string>
+    <string name="pro5">退出</string>
+    <string name="backup">返回</string>
+</resources>

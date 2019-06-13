@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main" >
+
+    <!--请把下列语句放入上面的定义中，并且更改activity_main.xml的引用即可
+tools:showIn="@layout/activity_main"
+-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#d6d7d7"
+        android:gravity="top"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="@android:style/Widget.Holo.TextView.SpinnerItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/author"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_red_light"
+            android:textColorLink="@color/colorAccent"
+            android:textDirection="firstStrong"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="?android:attr/listDivider" />
+
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="5"
+            android:rowCount="4">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="pro1"
+                android:src="@drawable/android3141"
+                android:tooltipText="@string/pro1"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="pro2"
+                android:src="@drawable/android3142"
+                android:tooltipText="@string/pro2"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="pro3"
+                android:src="@drawable/android3143"
+                android:tooltipText="@string/pro3"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="pro4"
+                android:src="@drawable/android3144"
+                android:tooltipText="@string/pro4"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton1"
+                android:onClick="imageClick"
+                android:tooltipText="@string/imagebuttontip"
+                app:srcCompat="@drawable/android3145" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="imageClick"
+                android:src="@drawable/android2091"
+                android:tooltipText="@string/imagebuttontip" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="imageClick"
+                android:src="@drawable/android2094"
+                android:tooltipText="@string/imagebuttontip" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="imageClick"
+                android:src="@drawable/android2096"
+                android:tooltipText="@string/imagebuttontip" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="imageClick"
+                android:src="@drawable/android2098"
+                android:tooltipText="@string/imagebuttontip" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pro5"
+                android:src="@drawable/exit"
+                android:tooltipText="@string/imagebuttontip" />
+
+             <Button
+                android:id="@+id/bt01"
+                android:onClick="imageClick01"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="汽车"
+                android:textSize="12sp"
+                android:textColor="#ff0000"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                android:drawableLeft="@drawable/android2240"
+                android:background="@drawable/android2586"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="imageClick"
+                android:src="@drawable/android2744"
+                android:tooltipText="@string/imagebuttontip" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="imageClick"
+                android:src="@drawable/android3701"
+                android:tooltipText="@string/imagebuttontip" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="imageClick"
+                android:src="@drawable/android1068"
+                android:tooltipText="@string/imagebuttontip" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="imageClick"
+                android:src="@drawable/android1071"
+                android:tooltipText="@string/imagebuttontip" />
+        </GridLayout>
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/dscf0865"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
